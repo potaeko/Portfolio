@@ -4,9 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch": "node-sass -o css scss/main.scss -w"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/potaeko/portfolio-page.git"
+  },
+  "bugs": {
+    "url": "https://github.com/potaeko/portfolio-page/issues"
+  },
+  "homepage": "https://github.com/potaeko/portfolio-page#readme",
+  "dependencies": {}
 }

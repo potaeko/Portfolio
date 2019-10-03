@@ -1,0 +1,115 @@
+.header {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-wrap :wrap;
+    overflow: hidden;
+    
+
+    #hero-video{
+        opacity: 0.8;
+        position: absolute;
+        width:100%;
+        height: 100vh;
+        object-fit: cover;
+    }
+
+    .hero {
+        flex-direction: column;
+        display: flex;
+        flex-basis:100%;
+        @include centering(50%);
+        align-items: center;
+        text-align: center;
+    }
+}
+
+
+.navbar-navigation {
+    display:flex;
+    flex-flow: row wrap;
+    z-index: 200;
+    border: 3px solid red;
+    padding: 0;
+    flex-basis: 90%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    &-left {
+        display:flex;
+        flex-direction: row;
+    }
+    &-right {
+        display:flex;
+        flex-direction: row;
+    }
+}
+
+.portfolio-wrapper {
+    // flex-basis: 100%;
+    justify-content: center;
+    display: flex;
+    flex-wrap:wrap;
+    padding: 20px 0;
+    // border: 3px solid yellow;
+    position: relative;
+
+    &-center{
+        @include  flexLayout;
+        width:60vw;
+        display: flex;
+        background: $color-sky;
+        margin: 20px 0;
+        // border: 3px solid blue;
+
+      .portfolio-img-left {
+          width: 50%;
+        display:flex;
+        flex-wrap:wrap;
+        flex-direction: column;
+        box-sizing: border-box;
+        // border: 2px solid green;
+
+
+          img {
+              object-fit: cover;
+              @extend %fullSpace;
+            //   border: 2px solid blue;
+          }
+      }
+      .portfolio-right {
+        width: 50%;
+        display:flex;
+        flex-wrap:wrap;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 20px;
+        box-sizing: border-box;
+        // border: 2px solid rgb(180, 23, 120);
+        position: relative;
+
+        &-heading {
+            width: 100%;
+            height: 100%;
+            position: absolte;
+            text-align: center;
+            // border: 2px solid blue;
+            color: $color-white;
+            // display: flex;
+
+            .logo{
+                color: $color-white;
+                font-size: 50px;
+            }
+        }
+
+        &-detail {
+            width: 100%;
+            height: 100%;
+            // border: 2px solid blue;
+            color: $color-white;
+        }
+    }
+    }
+}
