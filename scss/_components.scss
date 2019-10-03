@@ -28,6 +28,13 @@
         color: $color-white;
         @include textStyles;
     }
+    .sub-name {
+        margin-top: 20px;
+        font-size: 30px;
+        font-family: $font-josefinSans;
+        color: $color-black;
+        @include textStyles;
+    }
 }
 
 .navbar-navigation > ul > li{

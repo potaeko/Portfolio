@@ -38,6 +38,14 @@ body {
     font-weight: 300;
     letter-spacing: 2px;
     text-transform: uppercase; }
+  .hero .sub-name {
+    margin-top: 20px;
+    font-size: 30px;
+    font-family: "Josefin Sans", sans-serif;
+    color: #000;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase; }
 
 .navbar-navigation > ul > li {
   text-decoration: none; }
