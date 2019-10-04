@@ -23,10 +23,20 @@ $(window).on('load', function(){
 });
 
 
-function hover(element) {
+
+
+function hover1(element) {
     element.setAttribute('src', 'src/busaba.gif');
   }
   
-  function unhover(element) {
+  function unhover1(element) {
     element.setAttribute('src', 'src/busaba restaurant.jpg');
+  }
+
+  function hover2(element) {
+    element.setAttribute('src', 'src/chutima.gif');
+  }
+  
+  function unhover2(element) {
+    element.setAttribute('src', 'src/chutima.jpg');
   }
