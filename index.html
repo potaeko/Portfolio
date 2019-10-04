@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-   
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
@@ -13,174 +13,87 @@
       href="https://fonts.googleapis.com/css?family=Dancing+Script|Josefin+Sans:400,700|Roboto:400,700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
   
     <link rel="stylesheet" href="css/main.css" />
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <title>Teera Kositpantavong's Portfolio</title>
   </head>
   <body>
-      
     <!-- Header -->
-    <header class="header">
-        <video autoplay muted loop id="hero-video">
-            <source src="src/program_developing_429.mp4" type="video/mp4">
-        </video>
+    <header id="home">
+      <video autoplay muted loop id="hero-video">
+        <source src="src/program_developing_429.mp4" type="video/mp4" />
+      </video>
       <div class="hero">
         <h1 class="main-name">Hello, I'm<span> Teera</span></h1>
         <a href="#" class="hero-logo"><i class="far fa-folder-open"></i></a>
         <h1 class="main-name"><span>Kositpantavong</span></h1>
-        <h2 class="sub-name"> full-stack web developer</h2>
-        <button id="hero-video-btn" onclick="videoFunction()">Pause</button>
+        <h2 class="sub-name">full-stack web developer</h2>
+        <button id="hero-video-btn" onclick="videoFunction()">(pause)</button>
       </div>
+
+      <nav class="navbar fixed-top navbar-expand-md navbar-dark ">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Teera's Design<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">PORTFOLIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
     <!-- End of Header -->
 
-    <!-- Nav bar -->
-    <nav class="navbar-navigation">
-      <div class="navbar-navigation-left">
-        <ul class="nav-list-left">
-          <li class="nav-list-left-item">
-            <a href="" class="nav-list-link">Home</a>
-          </li>
-          <li class="nav-list-left-item">
-            <a href="" class="nav-list-link">About Teera</a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="navbar-navigation-right">
-        <ul class="nav-list-right">
-          <li class="nav-list-right-item">
-            <a href="" class="logo"><i class="fab fa-github"></i></a>
-          </li>
-          <li class="nav-list-right-item">
-            <a href="" class="logo"><i class="fab fa-linkedin-in"></i></a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <!-- End of Nav bar -->
+    <!-- About Section -->
+    <section>
+      
+    </section>
+   
+    <!-- End of About -->
 
     <!-- Portfolio Section -->
-    <section class="portfolio-wrapper">
-
+    <section class="portfolio-wrapper"> 
       <!-- #1 portfolio -->
       <div class="portfolio-wrapper-center">
         <div class="portfolio-img-left">
-           <img src="src/camera-coffee-composition-1509428.jpg" alt="">
+          <img src="src/camera-coffee-composition-1509428.jpg" alt="" />
         </div>
         <div class="portfolio-right">
-            <div class="portfolio-right-heading">
-                <a href="#" class="logo"><i class="fas fa-laptop-code"></i></a>
-                <h3 >SASS BUSABA</h3>
-              </div>
-              <div class="portfolio-right-detail">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis, expedita?</p>
-              </div>
+          <div class="portfolio-right-heading">
+            <a href="#" class="logo"><i class="fas fa-laptop-code"></i></a>
+            <h3>SASS BUSABA</h3>
           </div>
-      </div>
-      <!-- #2 portfolio -->
-      <div class="portfolio-wrapper-center">
-          <div class="portfolio-img-left">
-              <img src="src/camera-coffee-composition-1509428.jpg" alt="">
+          <div class="portfolio-right-detail">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Blanditiis, expedita?
+            </p>
           </div>
-          <div class="portfolio-right">
-              <div class="portfolio-right-heading">
-                  <a href="#" class="logo"><i class="fas fa-laptop-code"></i></a>
-                  <h3 >SASS BUSABA</h3>
-                </div>
-                <div class="portfolio-right-detail">
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis, expedita?</p>
-                </div>
-            </div>
         </div>
-        <!-- #3 portfolio -->
-        <div class="portfolio-wrapper-center">
-            <div class="portfolio-img-left">
-                <img src="src/camera-coffee-composition-1509428.jpg" alt="">
-            </div>
-            <div class="portfolio-right">
-                <div class="portfolio-right-heading">
-                    <a href="#" class="logo"><i class="fas fa-laptop-code"></i></a>
-                    <h3 >SASS BUSABA</h3>
-                  </div>
-                  <div class="portfolio-right-detail">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis, expedita?</p>
-                  </div>
-              </div>
-          </div>
-          <!-- #4 portfolio -->
-          <div class="portfolio-wrapper-center">
-              <div class="portfolio-img-left">
-                  <img src="src/camera-coffee-composition-1509428.jpg" alt="">
-              </div>
-              <div class="portfolio-right">
-                  <div class="portfolio-right-heading">
-                      <a href="#" class="logo"><i class="fas fa-laptop-code"></i></a>
-                      <h3 >SASS BUSABA</h3>
-                    </div>
-                    <div class="portfolio-right-detail">
-                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis, expedita?</p>
-                    </div>
-                </div>
-            </div>
-            <!-- #5 portfolio -->
-            <div class="portfolio-wrapper-center">
-                <div class="portfolio-img-left">
-                    <img src="src/camera-coffee-composition-1509428.jpg" alt="">
-                </div>
-                <div class="portfolio-right">
-                    <div class="portfolio-right-heading">
-                        <a href="#" class="logo"><i class="fas fa-laptop-code"></i></a>
-                        <h3 >SASS BUSABA</h3>
-                      </div>
-                      <div class="portfolio-right-detail">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis, expedita?</p>
-                      </div>
-                  </div>
-              </div>
-              <!-- #6 portfolio -->
-              <div class="portfolio-wrapper-center">
-                  <div class="portfolio-img-left">
-                      <img src="src/camera-coffee-composition-1509428.jpg" alt="">
-                  </div>
-                  <div class="portfolio-right">
-                      <div class="portfolio-right-heading">
-                          <a href="#" class="logo"><i class="fas fa-laptop-code"></i></a>
-                          <h3 >SASS BUSABA</h3>
-                        </div>
-                        <div class="portfolio-right-detail">
-                          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis, expedita?</p>
-                        </div>
-                    </div>
-                </div>
+      </div>
+      </section>
+      <!-- #2 portfolio -->
 
-                <div class="portfolio-wrapper-center">
-                    <div class="portfolio-img-left">
-                        <img src="src/camera-coffee-composition-1509428.jpg" alt="">
-                    </div>
-                    <div class="portfolio-right">
-                        <div class="portfolio-right-heading">
-                            <a href="#" class="logo"><i class="fas fa-laptop-code"></i></a>
-                            <h3 >SASS BUSABA</h3>
-                          </div>
-                          <div class="portfolio-right-detail">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis, expedita?</p>
-                          </div>
-                      </div>
-                  </div>
-    </section>
     <!-- End of Portfolio Section -->
 
     <!-- Footer -->
-    <footer>
-
-
-
-    </footer>
+    <footer></footer>
     <!-- End of Footer -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="main.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>

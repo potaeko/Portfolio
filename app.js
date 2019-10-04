@@ -1,5 +1,7 @@
-var video = document.querySelector('#hero-video');
 
+
+//video button
+var video = document.querySelector('#hero-video');
 var videoBtn = document.querySelector('#hero-video-btn');
 
 function videoFunction() {
@@ -8,13 +10,14 @@ function videoFunction() {
         videoBtn.innerHTML = "(pause)";
     } else {
         video.pause();
-        videoBtn.innerHTML ="(play)";
+        videoBtn.innerHTML ="(code)";
     }
 }
 
 
 //animated
 $(window).on('load', function(){
-    $('.main-name').addClass('animated bounceInLeft delay-1s');
+    $('.main-name').addClass('animated flipInX delay-1s');
     $('.sub-name').addClass('animated zoomInUp delay-1s');
+    $('#hero-video-btn').addClass('animated zoomIn delay-1s');
 });
