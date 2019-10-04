@@ -21,3 +21,12 @@ $(window).on('load', function(){
     $('.sub-name').addClass('animated zoomInUp delay-1s');
     $('#hero-video-btn').addClass('animated zoomIn delay-1s');
 });
+
+
+function hover(element) {
+    element.setAttribute('src', 'src/busaba.gif');
+  }
+  
+  function unhover(element) {
+    element.setAttribute('src', 'src/busaba restaurant.jpg');
+  }

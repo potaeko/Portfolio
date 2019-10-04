@@ -52,3 +52,13 @@
 .navbar-navigation > ul > li{
     text-decoration: none;
 }
+
+.btn {
+    a {
+      color: $color-white;
+  
+      &:hover {
+        color: $color-primary;
+      }
+    }
+  }

@@ -85,7 +85,7 @@ nav {
         // border: 2px solid green;
 
 
-          img {
+          .img-response {
               object-fit: cover;
               @extend %fullSpace;
             //   border: 2px solid blue;
@@ -124,5 +124,19 @@ nav {
             color: $color-white;
         }
     }
+    }
+}
+
+.footer {
+    padding: 70px;
+    background-color: $color-sky;
+    @include flexLayout;
+
+    &-copyright-paragraph {
+        color: $color-white;
+    }
+
+    span {
+        color:$color-primary;
     }
 }
