@@ -129,10 +129,10 @@ nav {
       flex-wrap: wrap;
       align-items: center;
       padding: 0 20px;
-      position: relative;
-      overflow: hidden; }
+      position: relative; }
       .portfolio-wrapper-center .portfolio-right-heading {
         width: 100%;
+        font-family: "Josefin Sans", sans-serif;
         position: absolte;
         text-align: center;
         padding-top: 10px;
@@ -144,6 +144,7 @@ nav {
       .portfolio-wrapper-center .portfolio-right-detail {
         width: 100%;
         padding: 10px;
+        height: 40%;
         border: 2px solid #fff;
         color: #fff; }
 

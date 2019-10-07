@@ -24,13 +24,13 @@ $(window).on('load', function(){
 
 
 
-
+//Portfolio Gif
 function hover(element,i) {
-  var hoverSrc = ['src/busaba.gif', 'src/chutima.gif'];
+  var hoverSrc = ['src/busaba.gif', 'src/chutima.gif','src/solo.gif','src/vesco.gif'];
   element.setAttribute('src', hoverSrc[i]);
 }
 
 function unhover(element,i) {
-  var unhoverSrc = ['src/busaba restaurant.jpg','src/chutima.jpg'];
+  var unhoverSrc = ['src/busaba restaurant.jpg','src/chutima.jpg','src/solo.jpg','src/vesco.jpg'];
   element.setAttribute('src', unhoverSrc[i]);
 }
