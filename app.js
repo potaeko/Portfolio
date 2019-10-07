@@ -25,18 +25,12 @@ $(window).on('load', function(){
 
 
 
-function hover1(element) {
-    element.setAttribute('src', 'src/busaba.gif');
-  }
-  
-  function unhover1(element) {
-    element.setAttribute('src', 'src/busaba restaurant.jpg');
-  }
+function hover(element,i) {
+  var hoverSrc = ['src/busaba.gif', 'src/chutima.gif'];
+  element.setAttribute('src', hoverSrc[i]);
+}
 
-  function hover2(element) {
-    element.setAttribute('src', 'src/chutima.gif');
-  }
-  
-  function unhover2(element) {
-    element.setAttribute('src', 'src/chutima.jpg');
-  }
+function unhover(element,i) {
+  var unhoverSrc = ['src/busaba restaurant.jpg','src/chutima.jpg'];
+  element.setAttribute('src', unhoverSrc[i]);
+}

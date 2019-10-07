@@ -32,14 +32,14 @@
         <button id="hero-video-btn" onclick="videoFunction()">(pause)</button>
       </div>
 
-      <nav class="navbar fixed-top navbar-expand-md navbar-dark ">
+      <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Teera's Design<span class="sr-only">(current)</span></a>
+              <a class="navbar-brand" href="#">Teera's Design<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">ABOUT</a>
@@ -68,7 +68,7 @@
       <!-- #1 portfolio -->
       <div class="portfolio-wrapper-center">
         <div class="portfolio-img-left">
-          <img class="img-response" src="src/busaba restaurant.jpg" alt="" onmouseover="hover1(this);" onmouseout="unhover1(this);"/>
+          <img class="img-response" src="src/busaba restaurant.jpg" alt="" onmouseover="hover(this,0);" onmouseout="unhover(this,0);"/>
         </div>
         <div class="portfolio-right">
           <div class="portfolio-right-heading">
@@ -80,10 +80,10 @@
               Restaurant webpage, fully functional created with HTML, CSS, SASS
             </p>
           </div>
-          <div class="btn">
+          <div class="button">
             <a href="https://potaeko.github.io/SASS-Restaurant-Busaba/index.html" >Website</a>
           </div>
-          <div class="btn">
+          <div class="button">
             <a href="https://github.com/potaeko/SASS-Restaurant-Busaba">Code on Github</a>
           </div>
         </div>
@@ -91,7 +91,7 @@
       <!-- #2 portfolio -->
       <div class="portfolio-wrapper-center">
         <div class="portfolio-img-left">
-          <img class="img-response" src="src/chutima.jpg" alt="" onmouseover="hover2(this);" onmouseout="unhover2(this);"/>
+          <img class="img-response" src="src/chutima.jpg" alt="" onmouseover="hover(this,1);" onmouseout="unhover(this,1);"/>
         </div>
         <div class="portfolio-right">
           <div class="portfolio-right-heading">
@@ -103,10 +103,10 @@
               Clothing webpage, Front page design, created with HTML, CSS, SASS
             </p>
           </div>
-          <div class="btn">
+          <div class="button">
             <a href="https://potaeko.github.io/SASS-Chutima-Clothing-Store" >Website</a>
           </div>
-          <div class="btn">
+          <div class="button">
             <a href="https://github.com/potaeko/SASS-Chutima-Clothing-Store">Code on Github</a>
           </div>
         </div>
@@ -130,9 +130,9 @@
     </div>
     </footer>
     <!-- End of Footer -->
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/popper.js/dist/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script  src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="module" src="node_modules/popper.js/dist/popper.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="app.js"></script>
   </body>
 </html>
