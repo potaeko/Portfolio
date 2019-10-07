@@ -64,7 +64,7 @@ nav {
     justify-content: center;
     display: flex;
     flex-wrap:wrap;
-    padding: 20px 0;
+    padding: 0;
     // border: 3px solid yellow;
     position: relative;
 
@@ -74,37 +74,37 @@ nav {
         height:25vw;
         display: flex;
         background: $color-sky;
-        margin: 20px 20px;
-        // border: 3px solid blue;
+        margin: 20px 0;
+        // border: 3px solid red;
 
       .portfolio-img-left {
           width: 50%;
-          height: 90%;
+          height: 100%;
         display:flex;
         flex-wrap:wrap;
         flex-direction: column;
         // box-sizing: border-box;
         // align-content: center;
-        padding: 0 20px;
-        border: 2px solid green;
+        padding: 0;
+        // border: 2px solid green;
 
 
           .img-response {
-              object-fit: fit;
+              object-fit: cover;
               @extend %fullSpace;
             //   border: 2px solid blue;
           }
       }
       .portfolio-right {
         width: 50%;
-        height: 90%;
+        height: 100%;
         display:flex;
         flex-wrap:wrap;
         // flex-direction: column;
         align-items: center;
         // box-sizing: border-box;
         padding: 0 20px;
-        border: 2px solid rgb(180, 23, 120);
+        // border: 2px solid rgb(180, 23, 120);
         position: relative;
         overflow: hidden;
 
@@ -115,22 +115,22 @@ nav {
             position: absolte;
             text-align: center;
             padding-top: 10px;
-            border: 2px solid blue;
+            // border: 2px solid blue;
             color: $color-white;
             // display: flex;
 
             .logo{
                 color: $color-white;
-                font-size: 50px;
+                font-size: 30px;
                 padding-bottom: 10px;
             }
         }
 
         &-detail {
             width: 100%;
-            padding-top: 10px;
+            padding: 10px;
             // height: 100%;
-            border: 2px solid blue;
+            border: 2px solid $color-white;
             color: $color-white;
         }
     }

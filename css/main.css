@@ -58,10 +58,16 @@ body {
 .navbar-navigation > ul > li {
   text-decoration: none; }
 
-.button a {
-  color: #fff; }
-  .button a:hover {
-    color: #fd7d13; }
+.button {
+  border: 2px solid #fff;
+  background-color: #fd7d13;
+  margin-right: 5px;
+  padding: 0 5px; }
+  .button a {
+    color: #fff; }
+    .button a:hover {
+      color: #FFE4C4;
+      text-decoration: none; }
 
 #home {
   width: 100%;
@@ -95,7 +101,7 @@ nav {
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
-  padding: 20px 0;
+  padding: 0;
   position: relative; }
   .portfolio-wrapper-center {
     display: flex;
@@ -106,25 +112,23 @@ nav {
     height: 25vw;
     display: flex;
     background: #4b89cb;
-    margin: 20px 20px; }
+    margin: 20px 0; }
     .portfolio-wrapper-center .portfolio-img-left {
       width: 50%;
-      height: 90%;
+      height: 100%;
       display: flex;
       flex-wrap: wrap;
       flex-direction: column;
-      padding: 0 20px;
-      border: 2px solid green; }
+      padding: 0; }
       .portfolio-wrapper-center .portfolio-img-left .img-response {
-        object-fit: fit; }
+        object-fit: cover; }
     .portfolio-wrapper-center .portfolio-right {
       width: 50%;
-      height: 90%;
+      height: 100%;
       display: flex;
       flex-wrap: wrap;
       align-items: center;
       padding: 0 20px;
-      border: 2px solid #b41778;
       position: relative;
       overflow: hidden; }
       .portfolio-wrapper-center .portfolio-right-heading {
@@ -132,16 +136,15 @@ nav {
         position: absolte;
         text-align: center;
         padding-top: 10px;
-        border: 2px solid blue;
         color: #fff; }
         .portfolio-wrapper-center .portfolio-right-heading .logo {
           color: #fff;
-          font-size: 50px;
+          font-size: 30px;
           padding-bottom: 10px; }
       .portfolio-wrapper-center .portfolio-right-detail {
         width: 100%;
-        padding-top: 10px;
-        border: 2px solid blue;
+        padding: 10px;
+        border: 2px solid #fff;
         color: #fff; }
 
 .footer {
