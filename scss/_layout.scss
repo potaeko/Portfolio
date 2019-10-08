@@ -57,10 +57,67 @@ nav {
 //         flex-direction: row;
 //     }
 // }
+.about-wrapper{
+    padding: 140px 0;
+}
+
+.about-header {
+    // @include flexLayout;
+
+    &-wrapper{
+        @include flexLayout;
+        font-size: 42px;
+        padding-bottom: 70px;
+        font-weight:700;
+        color:#45474A;
+    }
+}
+
+.about-logo-wrapper{
+    @include flexLayout;
+    padding: 20px 220px;
+    color:#616161;
+
+    .about-logo-item{
+        // @include flexLayout;
+        width: 25%;
+        height: 30vh;
+        margin: 0 30px;
+        // border:2px solid red;
 
 
-.portfolio-wrapper {
+        .about-logo-detail{
+            text-align: center;
+            // border:2px solid blue;
+
+            .label{
+                font-size:24px;
+                font-weight: 700;
+                font-family:$font-roboto; 
+            }
+        }
+        .about-logo {
+            font-size:40px;
+            text-align: center;
+            padding-bottom: 10px;
+           
+            i {
+                // border: 4px solid $color-sky;
+                background-color: $color-sky;
+                color: $color-white;
+                border-radius:  50%;
+                width: 110px;
+                height: 100px;
+                line-height: 2.5;
+            }
+        }
+    }
+}
+
+
+#portfolio {
     // flex-basis: 100%;
+    background-color: #F5F5F5;
     justify-content: center;
     display: flex;
     flex-wrap:wrap;
@@ -68,7 +125,7 @@ nav {
     // border: 3px solid yellow;
     position: relative;
 
-    &-center{
+    .portfolio-wrapper-center{
         @include  flexLayout;
         width:60vw;
         height:25vw;

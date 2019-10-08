@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
+    <!-- Basic SEO -->
+    <meta name="description" content="Teera Kositpantavong, Full-stack web developer">
+    <meta name="keywords" content="Teera Kositpantavong, Full-stack, full stack, Front-end, front end, html5, css3, Portfolio, SASS, Web Design, Web Development, Responsive website, Creative website">
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
@@ -28,10 +32,11 @@
         <h1 class="main-name">Hello, I'm<span> Teera</span></h1>
         <a href="#" class="hero-logo"><i class="far fa-folder-open"></i></a>
         <h1 class="main-name"><span>Kositpantavong</span></h1>
-        <h2 class="sub-name">full-stack web developer</h2>
+        <h2 class="sub-name">Full-stack web developer</h2>
         <button id="hero-video-btn" onclick="videoFunction()">(pause)</button>
       </div>
 
+      <!-- Navbar -->
       <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -42,7 +47,7 @@
               <a class="navbar-brand" href="#">Teera's Design<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">ABOUT</a>
+              <a class="nav-link" href="#about">ABOUT</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">PORTFOLIO</a>
@@ -53,18 +58,68 @@
           </ul>
         </div>
       </nav>
+      <!-- End of Navbar -->
+
     </header>
     <!-- End of Header -->
 
     <!-- About Section -->
-    <section>
+    <section id="about">
+      <div class="about-wrapper">
+        <div class="about-header-wrapper">ABOUT</div>
+        <div class="about-logo-wrapper">
+          <!-- #1 logo-->
+          <div class="about-logo-item">
+            <div class="about-logo">
+                <i class="fas fa-tachometer-alt"></i>
+            </div>
+            <div class="about-logo-detail">
+              <div class="label">Fast</div>
+              <div>Fast load times and lag free interaction, my highest priority.</div>
+            </div>
+          </div>
+          <!-- #2 logo-->
+          <div class="about-logo-item">
+              <div class="about-logo">
+                  <i class="fas fa-desktop"></i>
+              </div>
+              <div class="about-logo-detail">
+                <div class="label">Responsive</div>
+                <div>Screen sizes are always changing, my layouts can adapt to any screen size</div>
+              </div>
+            </div>
+          <!-- #3 logo-->
+          <div class="about-logo-item">
+              <div class="about-logo">
+                  <i class="far fa-lightbulb"></i>
+              </div>
+              <div class="about-logo-detail">
+                <div class="label">Intuitive</div>
+                <div>Strong preference easy to use, intuitive UX/UI.</div>
+              </div>
+            </div>
+          <!-- #4 logo-->
+          <div class="about-logo-item">
+              <div class="about-logo">
+                  <i class="fas fa-dna"></i>
+              </div>
+              <div class="about-logo-detail">
+                <div class="label">Dynamic</div>
+                <div>Websites don't have to be static, I love making pages come to life.</div>
+              </div>
+            </div>
+        </div>
 
+        <div class="about-skills">
+          <div class="about-skills-left"></div>
+          <div class="about-skills-right"></div>
+        </div>
+      </div>
     </section>
-   
     <!-- End of About -->
 
     <!-- Portfolio Section -->
-    <section class="portfolio-wrapper"> 
+    <section id="portfolio"> 
       <!-- #1 portfolio -->
       <div class="portfolio-wrapper-center">
         <div class="portfolio-img-left">
@@ -77,7 +132,8 @@
           </div>
           <div class="portfolio-right-detail">
             <p>
-              Restaurant webpage, fully functional created with HTML, CSS, SASS
+              Fully functional restaurant website with High Resolution images, menu, prices, events and promotions.</br> 
+              Improving restaurant marketing with mobile-friendly website, created with HTML, CSS, SASS.
             </p>
           </div>
           <div class="button">
