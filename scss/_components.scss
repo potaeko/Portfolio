@@ -54,18 +54,12 @@
 }
 
 .button {
-    border: 2px solid $color-white;
-    background-color: $color-primary;
-    margin-right: 5px;
-    padding: 0 5px;
+    @include mainBtn(50%);
+    position: relative;
     
-    a {
-      color: $color-white;
-
-  
-      &:hover {
-        color: #FFE4C4;
+    &:hover {
+        color: pink;
         text-decoration: none;
+        background-color: #262626;
       }
-    }
   }

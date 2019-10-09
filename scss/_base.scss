@@ -33,6 +33,29 @@ $font-josefinSans: 'Josefin Sans', sans-serif;
   transform: translate(-50%, -50%);
 }
 
+@mixin mainBtn($width){
+  width: $width;
+  height: 45px;
+  font-family: $font-josefinSans;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: HotPink;
+  background-color: $color-white;
+  border: 1px solid $color-sky;
+  outline:none;
+  cursor: pointer;
+  transition: all .4s;
+  text-align: center;
+}
+
+@mixin centering($topValue){
+  position: absolute;
+  top:$topValue;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -45,3 +68,23 @@ body {
 }
 
 
+/* 
+ * ==== octogone
+ */
+ .octo, .octo div {
+  margin: 0 auto;
+  transform-origin: 50% 50%;
+  overflow: hidden;
+  width: 300px;
+  height: 300px;
+}
+.octo, .octo div {
+  width: 270px;
+  height: 270px;
+}
+.octo {
+  transform: rotate(45deg);
+}
+.octo1 {
+  transform: rotate(-45deg);
+}

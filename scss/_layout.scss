@@ -58,7 +58,7 @@ nav {
 //     }
 // }
 .about-wrapper{
-    padding: 140px 0;
+    margin: 140px 0;
 }
 
 .about-header {
@@ -67,7 +67,7 @@ nav {
     &-wrapper{
         @include flexLayout;
         font-size: 42px;
-        padding-bottom: 70px;
+        margin-bottom: 70px;
         font-weight:700;
         color:#45474A;
     }
@@ -75,7 +75,7 @@ nav {
 
 .about-logo-wrapper{
     @include flexLayout;
-    padding: 20px 220px;
+    margin: 20px 220px;
     color:#616161;
 
     .about-logo-item{
@@ -99,7 +99,7 @@ nav {
         .about-logo {
             font-size:40px;
             text-align: center;
-            padding-bottom: 10px;
+            margin-bottom: 10px;
            
             i {
                 // border: 4px solid $color-sky;
@@ -111,6 +111,34 @@ nav {
                 line-height: 2.5;
             }
         }
+    }
+}
+
+.about-skills{
+    @include flexLayout;
+    margin: 100px 220px;
+
+    &-left{
+        display: flex;
+        flex-direction: column;
+        width:50%;
+        // border: 2px solid red;
+        text-align: center;
+
+        img.profile-img{
+            object-fit: cover; 
+            height: 316px;
+            width: 320px;
+        }
+        .profile-header {
+            font-size: 30px;
+            margin-top: 30px;
+        }
+    }
+
+    &-right{
+        width:50%;
+        border: 2px solid pink;
     }
 }
 
@@ -157,11 +185,9 @@ nav {
         height: 100%;
         display:flex;
         flex-wrap:wrap;
-        // flex-direction: column;
+        justify-content: center;
         align-items: center;
-        // box-sizing: border-box;
         padding: 0 20px;
-        // border: 2px solid rgb(180, 23, 120);
         position: relative;
         // overflow: hidden;
 
@@ -187,8 +213,9 @@ nav {
             width: 100%;
             padding: 10px;
             height: 40%;
-            border: 2px solid $color-white;
+            border: 1px solid $color-white;
             color: $color-white;
+            // background-color: $color-white;
         }
     }
     }
