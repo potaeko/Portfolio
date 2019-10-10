@@ -5,7 +5,6 @@
     display: flex;
     flex-wrap :wrap;
     overflow: hidden;
-    
 
     #hero-video{
         opacity: 0.8;
@@ -28,13 +27,6 @@
 nav {
     width:100%;
     height: 50px;
-    // position: absolute;
-    // z-index: 200;
-    // font-size: 20px;
-    // top: 100;
-    // background-color: rgba(75,137,203,0.5);
-
-    
 }
 
 
@@ -73,25 +65,32 @@ nav {
     }
 }
 
+.flexColumn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    // border: 2px solid red;
+}
+
 .about-logo-wrapper{
     @include flexLayout;
-    margin: 20px 220px;
+    margin: 20px 120px;
     color:#616161;
 
     .about-logo-item{
         // @include flexLayout;
-        width: 25%;
-        height: 30vh;
-        margin: 0 30px;
+        // width: 25%;
+        // height: 30vh;
+        // margin: 0 30px;
         // border:2px solid red;
-
 
         .about-logo-detail{
             text-align: center;
-            // border:2px solid blue;
+            border:2px solid blue;
+            margin: 0 20px;
 
             .label{
-                font-size:24px;
+                font-size: 24px;
                 font-weight: 700;
                 font-family:$font-roboto; 
             }
@@ -138,13 +137,67 @@ nav {
 
     &-right{
         width:50%;
-        border: 2px solid pink;
+        // border: 2px solid pink;
+
+        .skill{
+            @include flexLayout;
+            margin-bottom: 20px;
+        }
+
+        .skill-title{
+            width: 140px;
+            height: 30px;
+            // border:1px solid green;
+            background-color: $color-sky;
+            text-align: center;
+            text-transform: uppercase;
+            line-height: 1.9;
+            font-family: $font-roboto;
+            font-weight: 700;
+            color:$color-white;
+            // padding: 2px 5px;
+        }
+
+        .progress{
+            height: 30px;
+            width:100%;
+            /* remove bar radius */
+            border-radius: 0;
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            -ms-border-radius: 0;
+            -o-border-radius: 0;
+            background-color: #efefef;
+            overflow:visible;
+            // border: 1px solid red;
+            position:relative;
+           
+            
+
+            .progress-bar{
+                background-color: #92b2d3;
+                // position:relative;
+            }
+            .progress-bar span{
+                font-size:11px;
+                font-weight:700;
+                font-family:"Open Sans", sans-serif;
+                // background: #212226;
+                padding:3px;
+                color: black;
+                /* Relative to .progressbar and overflow visible in .progress */
+                position: absolute;
+                left: 92%;
+               
+            }
+            
+        }
+       
     }
 }
 
 
 #portfolio {
-    // flex-basis: 100%;
     background-color: #F5F5F5;
     justify-content: center;
     display: flex;
@@ -168,8 +221,6 @@ nav {
         display:flex;
         flex-wrap:wrap;
         flex-direction: column;
-        // box-sizing: border-box;
-        // align-content: center;
         padding: 0;
         // border: 2px solid green;
 
@@ -189,8 +240,6 @@ nav {
         align-items: center;
         padding: 0 20px;
         position: relative;
-        // overflow: hidden;
-
 
         &-heading {
             width: 100%;
@@ -198,9 +247,7 @@ nav {
             position: absolte;
             text-align: center;
             padding-top: 10px;
-            // border: 2px solid blue;
             color: $color-white;
-            // display: flex;
 
             .logo{
                 color: $color-white;
@@ -231,6 +278,6 @@ nav {
     }
 
     span {
-        color:$color-primary;
+        color:$color-orange;
     }
 }

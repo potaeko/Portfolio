@@ -16,11 +16,33 @@ function videoFunction() {
 
 
 //animated
+$(function(){
+  new WOW().init();
+});
+
 $(window).on('load', function(){
     $('.main-name').addClass('animated flipInX delay-1s');
     $('.sub-name').addClass('animated zoomInUp delay-1s');
     $('#hero-video-btn').addClass('animated zoomIn delay-1s');
 });
+
+/* =============================================
+                Progress Bars
+============================================= */
+
+$(function(){
+  $("#progress-elements").waypoint(function(){
+      $(".progress-bar").each(function(){
+          $(this).animate({
+              width: $(this).attr("aria-valuenow") + "%"
+          },2000);
+      });
+      
+      this.destroy();
+  },{offset: 'bottom-in-view'});
+  
+});
+
 
 
 

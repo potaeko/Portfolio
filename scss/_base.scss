@@ -1,19 +1,27 @@
 $color-sky: #4b89cb;
 $color-white: #fff;
 $color-black: #000;
-$color-primary: #fd7d13;
+$color-orange: #fd7d13;
 
 $font-roboto: 'Roboto', sans-serif;
 $font-dancingScript: 'Dancing Script', cursive;
 $font-josefinSans: 'Josefin Sans', sans-serif;
 
-//center
+
 @mixin flexLayout {
   display: flex;
   justify-content: center;
   flex-direction: row;
   align-items: center;
 }
+
+
+// @mixin flexCol {
+//   display: flex;
+//   justify-content: center;
+//   flex-direction: column;
+//   align-items: center;
+// }
 
 @mixin textStyles($transform: uppercase) {
   font-weight: 300;

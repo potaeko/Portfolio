@@ -8,7 +8,7 @@
     <!-- Basic SEO -->
     <meta name="description" content="Teera Kositpantavong, Full-stack web developer">
     <meta name="keywords" content="Teera Kositpantavong, Full-stack, full stack, Front-end, front end, html5, css3, Portfolio, SASS, Web Design, Web Development, Responsive website, Creative website">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
@@ -50,7 +50,7 @@
               <a class="nav-link" href="#about">ABOUT</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">PORTFOLIO</a>
+              <a class="nav-link" href="#portfolio">PORTFOLIO</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">CONTACT</a>
@@ -69,6 +69,7 @@
         <div class="about-header-wrapper">ABOUT</div>
         <div class="about-logo-wrapper">
           <!-- #1 logo-->
+          <div class="flexColumn">
           <div class="about-logo-item">
             <div class="about-logo">
                 <i class="fas fa-tachometer-alt"></i>
@@ -88,7 +89,10 @@
                 <div>Screen sizes are always changing, my layouts can adapt to any screen size.</div>
               </div>
             </div>
+          </div>
+         
           <!-- #3 logo-->
+          <div class="flexColumn">
           <div class="about-logo-item">
               <div class="about-logo">
                   <i class="far fa-lightbulb"></i>
@@ -108,6 +112,7 @@
                 <div>Websites don't have to be static, I love making pages come to life.</div>
               </div>
             </div>
+          </div>
         </div>
 
         <div class="about-skills">
@@ -121,43 +126,59 @@
             <div class="profile-header">Who's Teera?</div>
             <div class="profile-detail">I'm the Front-End Web Developer.<br>I have serious passion for UI effects, animations and<br> creating intuative, dynamic user experiences.</div>
           </div>
-          <div class="about-skills-right">
-            <div class="bar">
-              <div>
-                <div>HTML</div>
-              </div>
-            </div>
-            <div class="bar">
-                <div>
-                    <div>CSS</div>
-                  </div>
-            </div>
-            <div class="bar">
-                <div>
-                    <div>Sass</div>
-                  </div>
-            </div>
-            <div class="bar">
-                <div>
-                    <div>React</div>
-                  </div>
-            </div>
-            <div class="bar">
-                <div>
-                    <div>Node.js</div>
-                  </div>
-            </div>
-            <div class="bar">
-                <div>
-                    <div>UI Design</div>
-                  </div>
-            </div>
-            <div class="bar">
-                <div>
-                    <div></div>
-                  </div>
-            </div>
 
+          <div class="about-skills-right">
+              <div id="progress-elements">
+              
+                  <div class="skill">
+                      <div class="skill-title">HTML</div>
+                      <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"><span>80%</span></div>
+                      </div>
+                    </div>
+
+                  <div class="skill">
+                    <div class="skill-title">CSS</div>
+                    <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"><span>80%</span></div>
+                    </div>
+                  </div>
+
+                  <div class="skill">
+                      <div class="skill-title">Sass</div>
+                      <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"><span>60%</span></div>
+                      </div>
+                    </div>
+                  
+                    <div class="skill">
+                        <div class="skill-title">React</div>
+                        <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"><span>60%</span></div>
+                        </div>
+                      </div>
+
+                      <div class="skill">
+                          <div class="skill-title">Javascript</div>
+                          <div class="progress">
+                          <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"><span>70%</span></div>
+                          </div>
+                        </div>
+
+                        <div class="skill">
+                            <div class="skill-title">Node.js</div>
+                            <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"><span>60%</span></div>
+                            </div>
+                          </div>
+
+                          <div class="skill">
+                            <div class="skill-title">UI Design</div>
+                            <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"><span>75%</span></div>
+                            </div>
+                          </div>
+                  
           </div>
         </div>
       </div>
@@ -214,7 +235,7 @@
         <div class="portfolio-right">
           <div class="portfolio-right-heading">
             <i class="fas fa-laptop-code logo"></i>
-            <h3>SOLO</h3>
+            <h3>SOLO Corporate</h3>
           </div>
           <div class="portfolio-right-detail">
             <p>
@@ -234,7 +255,7 @@
         <div class="portfolio-right">
           <div class="portfolio-right-heading">
             <i class="fas fa-laptop-code logo"></i>
-            <h3>VESCO</h3>
+            <h3>VESCO Corporate</h3>
           </div>
           <div class="portfolio-right-detail">
             <p>
@@ -249,11 +270,11 @@
       </section>
 
     <!-- End of Portfolio Section -->
-    <section id="portfolio">
+  
+    <!-- contact section -->
+    <section id="contact">
 
     </section>
-    <!-- contact section -->
-
     <!-- End of contact section -->
     <!-- Footer -->
     <footer class="footer">
@@ -264,9 +285,11 @@
     </div>
     </footer>
     <!-- End of Footer -->
-    <script  src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script type="module" src="node_modules/popper.js/dist/popper.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/popper.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
     <script src="app.js"></script>
   </body>
 </html>

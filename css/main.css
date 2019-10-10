@@ -139,34 +139,37 @@ nav {
   font-weight: 700;
   color: #45474A; }
 
+.flexColumn {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+
 .about-logo-wrapper {
   display: flex;
   justify-content: center;
   flex-direction: row;
   align-items: center;
-  margin: 20px 220px;
+  margin: 20px 120px;
   color: #616161; }
-  .about-logo-wrapper .about-logo-item {
-    width: 25%;
-    height: 30vh;
-    margin: 0 30px; }
-    .about-logo-wrapper .about-logo-item .about-logo-detail {
-      text-align: center; }
-      .about-logo-wrapper .about-logo-item .about-logo-detail .label {
-        font-size: 24px;
-        font-weight: 700;
-        font-family: "Roboto", sans-serif; }
-    .about-logo-wrapper .about-logo-item .about-logo {
-      font-size: 40px;
-      text-align: center;
-      margin-bottom: 10px; }
-      .about-logo-wrapper .about-logo-item .about-logo i {
-        background-color: #4b89cb;
-        color: #fff;
-        border-radius: 50%;
-        width: 110px;
-        height: 100px;
-        line-height: 2.5; }
+  .about-logo-wrapper .about-logo-item .about-logo-detail {
+    text-align: center;
+    border: 2px solid blue;
+    margin: 0 20px; }
+    .about-logo-wrapper .about-logo-item .about-logo-detail .label {
+      font-size: 24px;
+      font-weight: 700;
+      font-family: "Roboto", sans-serif; }
+  .about-logo-wrapper .about-logo-item .about-logo {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 10px; }
+    .about-logo-wrapper .about-logo-item .about-logo i {
+      background-color: #4b89cb;
+      color: #fff;
+      border-radius: 50%;
+      width: 110px;
+      height: 100px;
+      line-height: 2.5; }
 
 .about-skills {
   display: flex;
@@ -187,8 +190,46 @@ nav {
       font-size: 30px;
       margin-top: 30px; }
   .about-skills-right {
-    width: 50%;
-    border: 2px solid pink; }
+    width: 50%; }
+    .about-skills-right .skill {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 20px; }
+    .about-skills-right .skill-title {
+      width: 140px;
+      height: 30px;
+      background-color: #4b89cb;
+      text-align: center;
+      text-transform: uppercase;
+      line-height: 1.9;
+      font-family: "Roboto", sans-serif;
+      font-weight: 700;
+      color: #fff; }
+    .about-skills-right .progress {
+      height: 30px;
+      width: 100%;
+      /* remove bar radius */
+      border-radius: 0;
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      -ms-border-radius: 0;
+      -o-border-radius: 0;
+      background-color: #efefef;
+      overflow: visible;
+      position: relative; }
+      .about-skills-right .progress .progress-bar {
+        background-color: #92b2d3; }
+      .about-skills-right .progress .progress-bar span {
+        font-size: 11px;
+        font-weight: 700;
+        font-family: "Open Sans", sans-serif;
+        padding: 3px;
+        color: black;
+        /* Relative to .progressbar and overflow visible in .progress */
+        position: absolute;
+        left: 92%; }
 
 #portfolio {
   background-color: #F5F5F5;
