@@ -69,6 +69,10 @@
         &:hover {
             color: $color-orange;
         }
+
+        @media(max-width: 520px){
+            visibility: hidden;
+        }
     }
 }
 
@@ -76,9 +80,47 @@
     text-decoration: none;
 }
 
+.buttonColumn{
+    @include flexLayout;
+    width: 100%;
+
+    @media(max-width: 900px){
+        flex-direction: column;
+    }
+
+    @media(max-width: 680px){
+        // flex-direction: row;
+    }
+}
+
 .button {
     @include mainBtn(50%);
     position: relative;
+
+    @media(max-width: 1200px){
+        font-size: 9px;
+    }
+    @media(max-width: 1100px){
+        @include mainBtn(50%, 30px);
+        font-size: 9px;
+    }
+
+    @media(max-width: 900px){
+        @include mainBtn(80%, 30px);
+        font-size: 9px;
+    }
+
+    @media(max-width: 680px){
+        @include mainBtn(60%, 36px);
+        margin-bottom: 8px;
+        font-size: 9px;
+    }
+
+    @media(max-width: 500px){
+        @include mainBtn(50%, 30px);
+        font-size: 8px;
+     }
+ 
     
     &:hover {
         color: pink;

@@ -33,11 +33,11 @@ $font-josefinSans: 'Josefin Sans', sans-serif;
   transform: translate(-50%, -50%);
 }
 
-@mixin mainBtn($width){
+@mixin mainBtn($width,$height:45px){
   width: $width;
-  height: 45px;
+  height: $height;
   font-family: $font-josefinSans;
-  font-size: 14px;
+  font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: HotPink;
