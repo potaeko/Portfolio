@@ -15,6 +15,13 @@
         -o-border-radius:  50%;
         align-items: center;
         margin: 10px 0;
+
+        @media(max-width:600px){
+            font-size: 30px;
+            width: 50px;
+            height: 50px;
+            border: 2px solid $color-white;
+        }
     }
     span {
         color: $color-sky;
@@ -23,11 +30,19 @@
         line-height: 1.5;
     }
 
-    .main-name {
+   .main-name {
         font-size: 42px;
         font-family: $font-josefinSans;
         color: $color-white;
         @include textStyles;
+
+        @media(max-width:600px){
+            font-size: 35px;
+        }
+
+        @media(max-width:500px){
+            font-size: 25px;
+        }
     }
     .sub-name {
         margin-top: 20px;
@@ -35,6 +50,14 @@
         font-family: $font-josefinSans;
         color: $color-black;
         @include textStyles;
+
+        @media(max-width:1000px){
+            font-size: 20px;
+        }
+
+        @media(max-width:500px){
+            font-size: 14px;
+        }
     }
    
     #hero-video-btn {
@@ -63,5 +86,3 @@
         background-color: #262626;
       }
   }
-
-  
