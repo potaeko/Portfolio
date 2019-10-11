@@ -339,8 +339,7 @@ nav {
     height: 25vw;
     display: flex;
     background: #4b89cb;
-    margin: 20px 0;
-    border: 3px solid red; }
+    margin: 20px 0; }
     #portfolio .portfolio-wrapper-center .portfolio-img-left {
       width: 50%;
       height: 100%;
