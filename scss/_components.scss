@@ -132,3 +132,49 @@
   /*==============================================
                      NAVIGATION
 ================================================*/
+
+
+.navbar {
+    padding: 20px 0;
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+}
+
+.top-nav {
+    background: rgba(0,0,0,0.7);
+    padding: 7px 0;
+}
+
+.navbar-brand, .navbar-nav >li >a {
+    color: $color-white;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.navbar-brand:hover ,.navbar-nav >li >a:hover {
+    color: $color-orange;
+}
+
+//Scroll spy effect
+.navbar-nav >li >a.active{
+    color: $color-orange;
+}
+
+.custom-toggler.navbar-toggler {
+    border-color: $color-white;
+    outline: none;
+
+    &:hover{
+    border-color: $color-orange;
+    }
+
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}

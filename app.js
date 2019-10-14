@@ -60,42 +60,50 @@ function pauseUnhover(el){
 ================================================*/
 $(function(){
     $(window).scroll(function(){
-        // if scroll top lower than 50px we wwant to hide Nav bar
+        // if scroll top lower than 100px we wwant to hide Nav bar
         if($(this).scrollTop()<50){
-            //hide nav
-            $("nav").removeClass("vesco-top-nav");
-            $("#back-to-top").fadeOut();
+            //hide nav, select nav element
+            $("nav").removeClass("top-nav");
+            // $("#back-to-top").fadeOut();
         }
         else{
             //show nav
-            $("nav").addClass("vesco-top-nav");
-            $("#back-to-top").fadeIn();
+            $("nav").addClass("top-nav");
+            // $("#back-to-top").fadeIn();
         }
     });
 });
+
 //Smooth scrolling
-$(function(){
-    $("a.smooth-scrolling").click(function(event){
-        //stop open link url
-        event.preventDefault(); 
-        //this = a
-        //get/return id like #about, #work, #team and etc, if clicked 
-        var section = $(this).attr("href");
+// $(document).ready(function(){
+//     $('body').scrollspy({
+//         target: "#myScrollspy", 
+//         offset: 50});   
+//   });
+
+
+// $(function(){
+//     $("a.smooth-scrolling").click(function(event){
+//         //stop open link url
+//         event.preventDefault(); 
+//         //this = a
+//         //get/return id like #about, #work, #team and etc, if clicked 
+//         var section = $(this).attr("href");
         
-        //animate
-        $('html, body').animate({
-            scrollTop: $(section).offset().top-64
-        }, 1250,"easeInOutExpo"); //how long animation will run 1.25sec
+//         //animate
+//         $('html, body').animate({
+//             scrollTop: $(section).offset().top-64
+//         }, 1250,"easeInOutExpo"); //how long animation will run 1.25sec
 
-    });
-});
+//     });
+// });
 
-//Close mobile menu on click : click menu == click toggle button to close
-$(function(){
-        //class name for a tag in li
-    $(".navbar-collapse ul li a").on("click touch",function(){
-        //class name of toggle button
-        $(".navbar-toggle").click();
-    });
+// //Close mobile menu on click : click menu == click toggle button to close
+// $(function(){
+//         //class name for a tag in li
+//     $(".navbar-collapse ul li a").on("click touch",function(){
+//         //class name of toggle button
+//         $(".navbar-toggle").click();
+//     });
 
-});
+// });
