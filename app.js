@@ -61,7 +61,7 @@ function pauseUnhover(el){
 $(function(){
     $(window).scroll(function(){
         // if scroll top lower than 100px we wwant to hide Nav bar
-        if($(this).scrollTop()<50){
+        if($(this).scrollTop()<20){
             //hide nav, select nav element
             $("nav").removeClass("top-nav");
             // $("#back-to-top").fadeOut();
