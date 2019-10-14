@@ -15,6 +15,13 @@ $font-josefinSans: 'Josefin Sans', sans-serif;
   align-items: center;
 }
 
+@mixin flexColLayout {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
 @mixin textStyles($transform: uppercase) {
   font-weight: 300;
   letter-spacing: 2px;
@@ -66,4 +73,7 @@ body {
 }
 
 
+html {
+  scroll-behavior: smooth;
+}
 

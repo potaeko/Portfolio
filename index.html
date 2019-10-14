@@ -1,78 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <!-- Basic SEO -->
-    <meta name="description" content="Teera Kositpantavong, Full-stack web developer">
-    <meta name="keywords" content="Teera Kositpantavong, Full-stack, full stack, Front-end, front end, html5, css3, Portfolio, SASS, Web Design, Web Development, Responsive website, Creative website">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Dancing+Script|Josefin+Sans:400,700|Roboto:400,700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
-  
-    <link rel="stylesheet" href="css/main.css" />
-    <title>Teera Kositpantavong's Portfolio</title>
-  </head>
-  <body>
-    <!-- Header -->
-    <header id="home">
-      <video autoplay muted loop id="hero-video">
-        <source src="src/coding.mp4" type="video/mp4" />
-      </video>
-      <div class="hero">
-        <h1 class="main-name">Hello, I'm<span> Teera</span></h1>
-        <a href="#portfolio" class="hero-logo"><i class="far fa-folder-open"></i></a>
-        <h1 class="main-name"><span>Kositpantavong</span></h1>
-        <h2 class="sub-name">Full-stack web developer</h2>
-        <button id="hero-video-btn" onclick="videoFunction()">(pause)</button>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <!-- Basic SEO -->
+  <meta name="description" content="Teera Kositpantavong, Full-stack web developer">
+  <meta name="keywords"
+    content="Teera Kositpantavong, Full-stack, full stack, Front-end, front end, html5, css3, Portfolio, SASS, Web Design, Web Development, Responsive website, Creative website">
+  <!-- Style -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Josefin+Sans:400,700|Roboto:400,700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
+  <link rel="stylesheet" href="css/main.css" />
+
+  <title>Teera Kositpantavong's Portfolio</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <header id="home">
+    <video autoplay muted loop id="hero-video">
+      <source src="src/coding.mp4" type="video/mp4" />
+    </video>
+    <div class="hero">
+      <h1 class="main-name">Hello, I'm<span> Teera</span></h1>
+      <a href="#portfolio" class="hero-logo"><i class="far fa-folder-open"></i></a>
+      <h1 class="main-name"><span>Kositpantavong</span></h1>
+      <h2 class="sub-name">Full-stack web developer</h2>
+      <button id="hero-video-btn" onclick="videoFunction()">(pause)</button>
+    </div>
+
+    <!-- Navbar -->
+    <!-- <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="navbar-brand" href="#">Teera's Design<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">PORTFOLIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">CONTACT</a>
+          </li>
+        </ul>
       </div>
+    </nav> -->
+    <!-- End of Navbar -->
 
-      <!-- Navbar -->
-      <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="navbar-brand" href="#">Teera's Design<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">ABOUT</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#portfolio">PORTFOLIO</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">CONTACT</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <!-- End of Navbar -->
+  </header>
+  <!-- End of Header -->
 
-    </header>
-    <!-- End of Header -->
-
-    <!-- About Section -->
-    <section id="about">
-      <div class="about-wrapper">
-        <div class="about-header-wrapper">ABOUT</div>
-        <div class="about-logo-wrapper">
-          <!-- #1 logo-->
-          <div class="flexColumn">
+  <!-- About Section -->
+  <section id="about">
+    <div class="about-wrapper">
+      <div class="about-header-wrapper">ABOUT</div>
+      <div class="about-logo-wrapper">
+        <!-- #1 logo-->
+        <div class="flexColResponse">
           <div class="about-logo-item">
             <div class="about-logo">
-                <i class="fas fa-tachometer-alt"></i>
+              <i class="fas fa-tachometer-alt"></i>
             </div>
             <div class="about-logo-detail">
               <div class="label">Fast</div>
@@ -81,227 +81,248 @@
           </div>
           <!-- #2 logo-->
           <div class="about-logo-item">
-              <div class="about-logo">
-                  <i class="fas fa-desktop"></i>
-              </div>
-              <div class="about-logo-detail">
-                <div class="label">Responsive</div>
-                <div class="detail">Screen sizes are always changing, my layouts can adapt to any screen size.</div>
-              </div>
+            <div class="about-logo">
+              <i class="fas fa-desktop"></i>
+            </div>
+            <div class="about-logo-detail">
+              <div class="label">Responsive</div>
+              <div class="detail">Screen sizes are always changing, my layouts can adapt to any screen size.</div>
             </div>
           </div>
-         
-          <!-- #3 logo-->
-          <div class="flexColumn">
+        </div>
+
+        <!-- #3 logo-->
+        <div class="flexColResponse">
           <div class="about-logo-item">
-              <div class="about-logo">
-                  <i class="far fa-lightbulb"></i>
-              </div>
-              <div class="about-logo-detail">
-                <div class="label">Intuitive</div>
-                <div class="detail">Strong preference easy to use, intuitive UX/UI.</div>
-              </div>
+            <div class="about-logo">
+              <i class="far fa-lightbulb"></i>
             </div>
+            <div class="about-logo-detail">
+              <div class="label">Intuitive</div>
+              <div class="detail">Strong preference easy to use, intuitive UX/UI.</div>
+            </div>
+          </div>
           <!-- #4 logo-->
           <div class="about-logo-item">
-              <div class="about-logo">
-                  <i class="fas fa-dna"></i>
-              </div>
-              <div class="about-logo-detail">
-                <div class="label">Dynamic</div>
-                <div class="detail">Websites don't have to be static, I love making pages come to life.</div>
-              </div>
+            <div class="about-logo">
+              <i class="fas fa-dna"></i>
+            </div>
+            <div class="about-logo-detail">
+              <div class="label">Dynamic</div>
+              <div class="detail">Websites don't have to be static, I love making pages come to life.</div>
             </div>
           </div>
         </div>
+      </div>
+      <div class="about-skills">
+        <div class="about-skills-left">
+          <img class="profile-img" src="src/profile.jpeg" alt="Profile Image"></img>
+          <div class="profile-header">Who's Teera?</div>
+          <div class="profile-detail">I'm a Front-End Web Developer.<br>I have serious passion for UI effects,
+            animations
+            and<br> creating intuative, dynamic user experiences.</div>
+        </div>
 
-        <div class="about-skills">
-          <div class="about-skills-left">
-            <img class="profile-img" src="src/profile.jpeg" alt="Profile Image"></img>
-            <div class="profile-header">Who's Teera?</div>
-            <div class="profile-detail">I'm a Front-End Web Developer.<br>I have serious passion for UI effects, animations and<br> creating intuative, dynamic user experiences.</div>
-          </div>
+        <div class="about-skills-right">
+          <div id="progress-elements">
+            <div class="skill">
+              <div class="skill-title">HTML</div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="80" aria-valuemin="0"
+                  aria-valuemax="100"><span>80%</span></div>
+              </div>
+            </div>
 
-          <div class="about-skills-right">
-              <div id="progress-elements">
-                  <div class="skill">
-                      <div class="skill-title">HTML</div>
-                      <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"><span>80%</span></div>
-                      </div>
-                    </div>
+            <div class="skill">
+              <div class="skill-title">CSS</div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="80" aria-valuemin="0"
+                  aria-valuemax="100"><span>80%</span></div>
+              </div>
+            </div>
 
-                  <div class="skill">
-                    <div class="skill-title">CSS</div>
-                    <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"><span>80%</span></div>
-                    </div>
-                  </div>
+            <div class="skill">
+              <div class="skill-title">Sass</div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="60" aria-valuemin="0"
+                  aria-valuemax="100"><span>60%</span></div>
+              </div>
+            </div>
 
-                  <div class="skill">
-                      <div class="skill-title">Sass</div>
-                      <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"><span>60%</span></div>
-                      </div>
-                    </div>
-                  
-                    <div class="skill">
-                        <div class="skill-title">React</div>
-                        <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"><span>60%</span></div>
-                        </div>
-                      </div>
+            <div class="skill">
+              <div class="skill-title">React</div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="60" aria-valuemin="0"
+                  aria-valuemax="100"><span>60%</span></div>
+              </div>
+            </div>
 
-                      <div class="skill">
-                          <div class="skill-title">Javascript</div>
-                          <div class="progress">
-                          <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"><span>70%</span></div>
-                          </div>
-                        </div>
+            <div class="skill">
+              <div class="skill-title">Javascript</div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="70" aria-valuemin="0"
+                  aria-valuemax="100"><span>70%</span></div>
+              </div>
+            </div>
 
-                        <div class="skill">
-                            <div class="skill-title">Node.js</div>
-                            <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"><span>60%</span></div>
-                            </div>
-                          </div>
+            <div class="skill">
+              <div class="skill-title">Node.js</div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="60" aria-valuemin="0"
+                  aria-valuemax="100"><span>60%</span></div>
+              </div>
+            </div>
 
-                          <div class="skill">
-                            <div class="skill-title">UI Design</div>
-                            <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"><span>75%</span></div>
-                            </div>
-                          </div>
-                  
+            <div class="skill">
+              <div class="skill-title">UI Design</div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="75" aria-valuemin="0"
+                  aria-valuemax="100"><span>75%</span></div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
-      </div>
-    </section>
-    <!-- End of About -->
-
-    <!-- Portfolio Section -->
-    <section id="portfolio"> 
-        <div class="portfolio-header">Projects</div>
-      <!-- #1 portfolio -->
-      <div class="portfolio-wrapper-center">
-        <div class="portfolio-img-left">
-          <video loop muted class="img-response" onmouseover="playHover(this);" onmouseout="pauseUnhover(this);" >
-            <source src="src/busaba.mp4" type="video/mp4"/>
-          </video>
-        </div>
-        <div class="portfolio-right">
-          <div class="portfolio-right-heading">
-            <i class="fas fa-laptop-code logo"></i>
-            <h3>BUSABA Restaurant</h3>
-          </div>
-          <div class="portfolio-right-detail">
-            <p>
-              Fully functional restaurant responsive design website.</br> 
-              Concept for improving restaurant marketing with high resolution images, menu, prices, events and promotions. Created with HTML, CSS, and SASS.
-            </p>
-          </div>
-          <div class="buttonColumn">
-            <button type="button" onclick="window.location.href='https\:\/\/potaeko.github.io/SASS-Restaurant-Busaba/index.html'" class="button">Website</button>
-            <button type="button" onclick="window.location.href='https\:\/\/github.com/potaeko/SASS-Restaurant-Busaba'" class="button">Code on Github</button>
-          </div>
-        </div>
-      </div>
-      <!-- #2 portfolio -->
-      <div class="portfolio-wrapper-center">
-        <div class="portfolio-img-left">
-            <video loop muted class="img-response" onmouseover="playHover(this);" onmouseout="pauseUnhover(this);" >
-                <source src="src/chutima.mp4" type="video/mp4"/>
-            </video>
-        </div>
-        <div class="portfolio-right">
-          <div class="portfolio-right-heading">
-            <i class="fas fa-laptop-code logo"></i>
-            <h3>Chutima Clothing Store</h3>
-          </div>
-          <div class="portfolio-right-detail">
-            <p>
-              Clothing shop online responsive website concept, clean front page design. Created with HTML, CSS, and SASS.
-            </p>
-          </div>
-          <div class="buttonColumn">
-            <button type="button" onclick="window.location.href='https\:\/\/potaeko.github.io/SASS-Chutima-Clothing-Store'" class="button">Website</button>
-            <button type="button" onclick="window.location.href='https\:\/\/github.com/potaeko/SASS-Chutima-Clothing-Store'" class="button">Code on Github</button>
-          </div>  
-        </div>
-      </div>
-
-       <!-- #3 portfolio -->
-       <div class="portfolio-wrapper-center">
-        <div class="portfolio-img-left">
-            <video loop muted class="img-response" onmouseover="playHover(this);" onmouseout="pauseUnhover(this);" >
-                <source src="src/solo.mp4" type="video/mp4"/>
-            </video>
-        </div>
-        <div class="portfolio-right">
-          <div class="portfolio-right-heading">
-            <i class="fas fa-laptop-code logo"></i>
-            <h3>SOLO Corporate</h3>
-          </div>
-          <div class="portfolio-right-detail">
-            <p>
-              Corporate website concept, front page design.
-            </p>
-          </div>
-          <div class="buttonColumn">
-            <button type="button" onclick="window.location.href='https\:\/\/potaeko.github.io/Solo-Project-Frontend/'" class="button">Website</button>
-            <button type="button" onclick="window.location.href='https\:\/\/github.com/potaeko/Solo-Project-Frontend'" class="button">Code on Github</button>
-          </div>
-        </div>
-      </div>
-
-       <!-- #4 portfolio -->
-       <div class="portfolio-wrapper-center">
-        <div class="portfolio-img-left">
-            <video loop muted class="img-response" onmouseover="playHover(this);" onmouseout="pauseUnhover(this);" >
-                <source src="src/vesco.mp4" type="video/mp4"/>
-            </video>
-        </div>
-        <div class="portfolio-right">
-          <div class="portfolio-right-heading">
-            <i class="fas fa-laptop-code logo"></i>
-            <h3>VESCO Corporate</h3>
-          </div>
-          <div class="portfolio-right-detail">
-            <p>
-              Corporate website concept, front page design.
-            </p>
-          </div>
-          <div class="buttonColumn">
-            <button type="button" onclick="window.location.href='https\:\/\/potaeko.github.io/Vesco-Project-Frontend/'" class="button">Website</button>
-            <button type="button" onclick="window.location.href='https\:\/\/github.com/potaeko/Vesco-Project-Frontend'" class="button">Code on Github</button>
-          </div>  
-        </div>
-      </div>
-
-      </section>
-
-    <!-- End of Portfolio Section -->
-  
-    <!-- contact section -->
-    <section id="contact">
-
-    </section>
-    <!-- End of contact section -->
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="footer-copyright">
-        <p class="footer-copyright-paragraph">
-             TEERA KOSITPANTAVONG <span>&copy; 2019</span>
-        </p>
     </div>
-    </footer>
-    <!-- End of Footer -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/popper.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
-    <script src="app.js"></script>
-  </body>
+  </section>
+  <!-- End of About -->
+
+  <!-- Portfolio Section -->
+  <section id="portfolio">
+    <div class="portfolio-header">Projects</div>
+    <!-- #1 portfolio -->
+    <div class="portfolio-wrapper-center">
+      <div class="portfolio-img-left">
+        <video loop muted class="img-response" onmouseover="playHover(this);" onmouseout="pauseUnhover(this);">
+          <source src="src/busaba.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="portfolio-right">
+        <div class="portfolio-right-heading">
+          <i class="fas fa-laptop-code logo"></i>
+          <h3>BUSABA Restaurant</h3>
+        </div>
+        <div class="portfolio-right-detail">
+          <p>
+            Fully functional restaurant responsive design website.</br>
+            Concept for improving restaurant marketing with high resolution images, menu, prices, events and promotions.
+            Created with HTML, CSS, and SASS.
+          </p>
+        </div>
+        <div class="buttonColumn">
+          <button type="button"
+            onclick="window.location.href='https\:\/\/potaeko.github.io/SASS-Restaurant-Busaba/index.html'"
+            class="button">Website</button>
+          <button type="button" onclick="window.location.href='https\:\/\/github.com/potaeko/SASS-Restaurant-Busaba'"
+            class="button">Code on Github</button>
+        </div>
+      </div>
+    </div>
+    <!-- #2 portfolio -->
+    <div class="portfolio-wrapper-center">
+      <div class="portfolio-img-left">
+        <video loop muted class="img-response" onmouseover="playHover(this);" onmouseout="pauseUnhover(this);">
+          <source src="src/chutima.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="portfolio-right">
+        <div class="portfolio-right-heading">
+          <i class="fas fa-laptop-code logo"></i>
+          <h3>Chutima Clothing Store</h3>
+        </div>
+        <div class="portfolio-right-detail">
+          <p>
+            Clothing shop online responsive website concept, clean front page design. Created with HTML, CSS, and SASS.
+          </p>
+        </div>
+        <div class="buttonColumn">
+          <button type="button"
+            onclick="window.location.href='https\:\/\/potaeko.github.io/SASS-Chutima-Clothing-Store'"
+            class="button">Website</button>
+          <button type="button"
+            onclick="window.location.href='https\:\/\/github.com/potaeko/SASS-Chutima-Clothing-Store'"
+            class="button">Code on Github</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- #3 portfolio -->
+    <div class="portfolio-wrapper-center">
+      <div class="portfolio-img-left">
+        <video loop muted class="img-response" onmouseover="playHover(this);" onmouseout="pauseUnhover(this);">
+          <source src="src/solo.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="portfolio-right">
+        <div class="portfolio-right-heading">
+          <i class="fas fa-laptop-code logo"></i>
+          <h3>SOLO Corporate</h3>
+        </div>
+        <div class="portfolio-right-detail">
+          <p>
+            Corporate website concept, front page design.
+          </p>
+        </div>
+        <div class="buttonColumn">
+          <button type="button" onclick="window.location.href='https\:\/\/potaeko.github.io/Solo-Project-Frontend/'"
+            class="button">Website</button>
+          <button type="button" onclick="window.location.href='https\:\/\/github.com/potaeko/Solo-Project-Frontend'"
+            class="button">Code on Github</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- #4 portfolio -->
+    <div class="portfolio-wrapper-center">
+      <div class="portfolio-img-left">
+        <video loop muted class="img-response" onmouseover="playHover(this);" onmouseout="pauseUnhover(this);">
+          <source src="src/vesco.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="portfolio-right">
+        <div class="portfolio-right-heading">
+          <i class="fas fa-laptop-code logo"></i>
+          <h3>VESCO Corporate</h3>
+        </div>
+        <div class="portfolio-right-detail">
+          <p>
+            Corporate website concept, front page design.
+          </p>
+        </div>
+        <div class="buttonColumn">
+          <button type="button" onclick="window.location.href='https\:\/\/potaeko.github.io/Vesco-Project-Frontend/'"
+            class="button">Website</button>
+          <button type="button" onclick="window.location.href='https\:\/\/github.com/potaeko/Vesco-Project-Frontend'"
+            class="button">Code on Github</button>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- End of Portfolio Section -->
+
+  <!-- contact section -->
+  <section id="contact">
+
+  </section>
+  <!-- End of contact section -->
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-copyright">
+      <p class="footer-copyright-paragraph">
+        TEERA KOSITPANTAVONG <span>&copy; 2019</span>
+      </p>
+    </div>
+  </footer>
+  <!-- End of Footer -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+  <!-- <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+  <script src="app.js"></script>
+</body>
+
 </html>
