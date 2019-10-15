@@ -123,9 +123,10 @@
  
     
     &:hover {
-        color: pink;
+        color: rgb(241, 117, 138);
         text-decoration: none;
-        background-color: #262626;
+        background-color: $color-white;
+        letter-spacing: 2.2px;
       }
   }
 
