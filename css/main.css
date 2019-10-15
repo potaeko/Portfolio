@@ -194,6 +194,8 @@ html {
 .top-nav {
   background: rgba(0, 0, 0, 0.7);
   padding: 7px 0; }
+  .top-nav a {
+    color: #fd7d13; }
 
 .navbar-brand, .navbar-nav > li > a {
   color: #fff;
