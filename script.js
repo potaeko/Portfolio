@@ -59,6 +59,7 @@ $('document').ready(function() {
 
     else {
      $('.videoShow').show();
+     $('a').remove('.img-response');
      $('.imageShow').hide();
     }
 });
