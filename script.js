@@ -1,6 +1,7 @@
 
-
-//video button
+/* =============================================
+                Video Button
+============================================= */
 var video = document.querySelector('#hero-video');
 var videoBtn = document.querySelector('#hero-video-btn');
 
@@ -15,7 +16,9 @@ function videoFunction() {
 }
 
 
-//animated
+/* =============================================
+                Animated CSS
+============================================= */
 $(function(){
   new WOW().init();
 });
@@ -44,17 +47,19 @@ $(function(){
 });
 
 
-//Portfolio Mp4
+/* =============================================
+                Portfolio
+============================================= */
 
 $('document').ready(function() {
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|UC Browser/i.test(navigator.userAgent) ) {
-     $('#videoID').hide();
-     $('#imageID').show();
+     $('.videoShow').hide();
+     $('.imageShow').show();
     }
 
     else {
-     $('#videoID').show();
-     $('#imageID').hide();
+     $('.videoShow').show();
+     $('.imageShow').hide();
     }
 });
 
