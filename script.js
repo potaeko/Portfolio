@@ -35,7 +35,7 @@ $(function(){
       $(".progress-bar").each(function(){
           $(this).animate({
               width: $(this).attr("aria-valuenow") + "%"
-          },1500);
+          },2000);
       });
       
       this.destroy();
@@ -45,6 +45,19 @@ $(function(){
 
 
 //Portfolio Mp4
+
+$('document').ready(function() {
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|UC Browser/i.test(navigator.userAgent) ) {
+     $('#videoID').hide();
+     $('#imageID').show();
+    }
+
+    else {
+     $('#videoID').show();
+     $('#imageID').hide();
+    }
+});
+
 function playHover(el){
    el.play();
 }
