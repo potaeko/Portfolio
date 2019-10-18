@@ -327,7 +327,7 @@
         }
         @media(max-width: 680px){
             width:80vw;
-            height: 80vw;
+            height: 100vw;
             flex-direction: column;
         }
 
@@ -342,7 +342,7 @@
 
         @media(max-width: 680px){
             width:100%;
-            height:100vh;
+            height:50%;
         }
 
 
@@ -368,8 +368,9 @@
 
         @media(max-width: 680px){
             width:100%; 
-            height:60vh;
+            height:50%;
         }
+
 
         &-heading {
             width: 100%;
@@ -424,7 +425,7 @@
                  }
 
                  @media(max-width: 615px){
-                    font-size: 20px; 
+                    font-size: 18px; 
                   }
             }
         }

@@ -87,10 +87,6 @@
     @media(max-width: 900px){
         flex-direction: column;
     }
-
-    @media(max-width: 680px){
-        // flex-direction: row;
-    }
 }
 
 .button {
@@ -112,6 +108,7 @@
 
     @media(max-width: 680px){
         @include mainBtn(60%, 36px);
+        padding:5px;
         margin-bottom: 8px;
         font-size: 9px;
     }
@@ -123,9 +120,8 @@
  
     
     &:hover {
-        color: rgb(241, 117, 138);
+        color: yellow;
         text-decoration: none;
-        background-color: $color-white;
         letter-spacing: 2.2px;
       }
   }
