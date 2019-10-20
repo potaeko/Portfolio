@@ -10,8 +10,8 @@
   <meta name="description" content="Teera Kositpantavong, Full-stack web developer">
   <meta name="keywords"
     content="Teera Kositpantavong, Full-stack, full stack, Front-end, front end, html5, css3, Portfolio, SASS, Web Design, Web Development, Responsive website, Creative website">
-  <!-- Style -->
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> -->
+  
+    <!-- Style -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
   <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Josefin+Sans:400,700|Roboto:400,700&display=swap"
     rel="stylesheet" />
@@ -23,6 +23,7 @@
 </head>
 
 <body data-spy="scroll" data-target=".fixed-top" data-offset="100">
+
   <!-- Preloader -->
   <div id="preloader">
     <div id="status">&nbsp;</div>
@@ -32,7 +33,6 @@
   <header>
 
     <nav class="navbar navbar-expand-md fixed-top " role="navigation">
-
 
       <a class="navbar-brand" href="#home">Teera's</a>
 
@@ -44,7 +44,6 @@
 
       <!-- Navbar links -->
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
-
         <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link" href="#about">ABOUT</a>
@@ -56,9 +55,7 @@
             <a class="nav-link" href="#contact">CONTACT</a>
           </li>
         </ul>
-
       </div>
-
     </nav>
     <!-- End of Navbar -->
 
@@ -81,11 +78,11 @@
   <!-- About Section -->
   <section id="about">
     <div class="about-wrapper">
-      <div class="about-header-wrapper">ABOUT</div>
+      <div class="about-header-wrapper wow">ABOUT</div>
       <div class="about-logo-wrapper">
         <!-- #1 logo-->
-        <div class="flexColResponse">
-          <div class="about-logo-item">
+        <div class="flexColResponse ">
+          <div class="noShow about-logo-item wow">
             <div class="about-logo">
               <i class="fas fa-tachometer-alt"></i>
             </div>
@@ -95,7 +92,7 @@
             </div>
           </div>
           <!-- #2 logo-->
-          <div class="about-logo-item">
+          <div class=" noShow about-logo-item wow">
             <div class="about-logo">
               <i class="fas fa-desktop"></i>
             </div>
@@ -108,7 +105,7 @@
 
         <!-- #3 logo-->
         <div class="flexColResponse">
-          <div class="about-logo-item">
+          <div class="noShow about-logo-item wow">
             <div class="about-logo">
               <i class="far fa-lightbulb"></i>
             </div>
@@ -118,7 +115,7 @@
             </div>
           </div>
           <!-- #4 logo-->
-          <div class="about-logo-item">
+          <div class="noShow about-logo-item wow">
             <div class="about-logo">
               <i class="fas fa-dna"></i>
             </div>
@@ -130,7 +127,7 @@
         </div>
       </div>
       <div class="about-skills">
-        <div class="about-skills-left">
+        <div class="about-skills-left wow">
           <img class="profile-img" src="src/profile.jpeg" alt="Profile Image"></img>
           <div class="profile-header">Who's Teera?</div>
           <div class="profile-detail">I'm a Front-End Web Developer.<br>I have serious passion for UI effects,
@@ -138,7 +135,7 @@
             and<br> creating intuative, dynamic user experiences.</div>
         </div>
 
-        <div class="about-skills-right">
+        <div class="about-skills-right wow">
           <div id="progress-elements">
             <div class="skill">
               <div class="skill-title">HTML</div>
@@ -205,10 +202,10 @@
 
   <!-- Portfolio Section -->
   <section id="portfolio">
-    <div class="portfolio-header">Projects</div>
+    <div class="portfolio-header wow" data-wow-delay="3s">Projects</div>
     <!-- #1 portfolio -->
-    <div class="portfolio-wrapper-center">
-      <div class="portfolio-img-left">
+    <div class="portfolio-wrapper-center wow">
+      <div class="portfolio-left wow">
         <video loop muted class="img-response videoShow" onmouseover="playHover(this);"
           onmouseout="pauseUnhover(this);">
           <source src="src/busaba.mp4" type="video/mp4" />
@@ -216,7 +213,7 @@
         <a class="img-response" href="https://potaeko.github.io/SASS-Restaurant-Busaba/index.html"><img
             class="img-response imageShow" src="src/busaba restaurant.jpg" alt="Busaba Restaurant"></a>
       </div>
-      <div class="portfolio-right">
+      <div class="portfolio-right wow">
         <div class="portfolio-right-heading">
           <i class="fas fa-laptop-code logo"></i>
           <h3>BUSABA Restaurant</h3>
@@ -238,8 +235,8 @@
       </div>
     </div>
     <!-- #2 portfolio -->
-    <div class="portfolio-wrapper-center">
-      <div class="portfolio-img-left">
+    <div class="portfolio-wrapper-center wow">
+      <div class="portfolio-left wow">
         <video loop muted class="img-response videoShow" onmouseover="playHover(this);"
           onmouseout="pauseUnhover(this);">
           <source src="src/chutima.mp4" type="video/mp4" />
@@ -247,7 +244,7 @@
         <a class="img-response" href="https://potaeko.github.io/SASS-Chutima-Clothing-Store"><img
             class="img-response imageShow" src="src/chutima.jpg" alt="Chutima Clothing Store"></a>
       </div>
-      <div class="portfolio-right">
+      <div class="portfolio-right wow">
         <div class="portfolio-right-heading">
           <i class="fas fa-laptop-code logo"></i>
           <h3>Chutima Clothing Store</h3>
@@ -269,8 +266,8 @@
     </div>
 
     <!-- #3 portfolio -->
-    <div class="portfolio-wrapper-center">
-      <div class="portfolio-img-left">
+    <div class="portfolio-wrapper-center wow">
+      <div class="portfolio-left wow">
         <video loop muted class="img-response videoShow" onmouseover="playHover(this);"
           onmouseout="pauseUnhover(this);">
           <source src="src/solo.mp4" type="video/mp4" />
@@ -278,7 +275,7 @@
         <a class="img-response" href="https://potaeko.github.io/Solo-Project-Frontend/"><img
             class="img-response imageShow" src="src/solo.jpg" alt="Solo Corporate"></a>
       </div>
-      <div class="portfolio-right">
+      <div class="portfolio-right wow">
         <div class="portfolio-right-heading">
           <i class="fas fa-laptop-code logo"></i>
           <h3>SOLO Corporate</h3>
@@ -298,8 +295,8 @@
     </div>
 
     <!-- #4 portfolio -->
-    <div class="portfolio-wrapper-center">
-      <div class="portfolio-img-left">
+    <div class="portfolio-wrapper-center wow">
+      <div class="portfolio-left wow">
         <video loop muted class="img-response videoShow" onmouseover="playHover(this);"
           onmouseout="pauseUnhover(this);">
           <source src="src/vesco.mp4" type="video/mp4" />
@@ -307,7 +304,7 @@
         <a class="img-response" href="https://potaeko.github.io/Vesco-Project-Frontend/"><img
             class="img-response imageShow" src="src/vesco.jpg" alt="Vesco Corporate"></a>
       </div>
-      <div class="portfolio-right">
+      <div class="portfolio-right wow">
         <div class="portfolio-right-heading">
           <i class="fas fa-laptop-code logo"></i>
           <h3>VESCO Corporate</h3>
@@ -331,7 +328,7 @@
   <!-- End of Portfolio Section -->
 
   <!-- contact section -->
-  <section id="contact">
+  <section id="contact" class="wow" data-wow-offset="-50">
     <div class="contact-wrapper-center">
         <div class="contact-header">CONTACT</div>
       <div class="contact-wrapper-center-email">

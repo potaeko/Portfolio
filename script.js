@@ -43,8 +43,35 @@ $(window).on('load', function(){
     $('.main-name').addClass('animated flipInX delay-1s');
     $('.sub-name').addClass('animated zoomInUp delay-1s');
     $('#hero-video-btn').addClass('animated zoomIn delay-1s');
+    $('.about-header-wrapper').addClass('animated fadeIn delay-.5s');
+    $(".about-logo-item").each(function(){
+        $(this).addClass('animated bounceInLeft ');
+    });
+    $('.about-skills-left').addClass('animated fadeInLeft delay-1s');
+    $('.about-skills-right').addClass('animated fadeInRight delay-1s');
+    $('.portfolio-header').addClass('animated fadeIn delay-.5s');
+    $('.portfolio-wrapper-center').addClass('animated fadeIn delay-1s');
+    $('.portfolio-left').addClass('animated fadeInLeft delay-1s');
+    $('.portfolio-right').addClass('animated fadeInRight delay-1s');
+    $('#contact').addClass('animated flipInX delay-2s');
 });
 
+
+/* =============================================
+                About Animate
+============================================= */
+
+// $(function(){
+//     $(".about-logo-wrapper").waypoint(function(){
+//         $(".about-logo-item").each(function(){
+//             $(this).removeClass('noShow');
+//             $(this).addClass('animated bounceInLeft delay-1s');
+//         });
+//         this.destroy();
+//     },{offset: 'bottom-in-view'});
+    
+//   });
+  
 /* =============================================
                 Progress Bars
 ============================================= */
