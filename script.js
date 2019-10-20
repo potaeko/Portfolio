@@ -1,4 +1,20 @@
 
+// import smoothscroll from 'smoothscroll-polyfill';
+ 
+// // kick off the polyfill!
+// smoothscroll.polyfill();
+
+
+/* =============================================
+                 Preloader
+    select 'window' on load and function 
+    make sure that whole website is loaded
+============================================= */
+$(window).on('load', function(){
+    $('#status').fadeOut();
+    $('#preloader').delay(350).fadeOut('slow');
+});
+
 /* =============================================
                 Video Button
 ============================================= */

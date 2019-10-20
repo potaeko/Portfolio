@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
   <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Josefin+Sans:400,700|Roboto:400,700&display=swap"
     rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
   <link src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.4/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/main.css" />
 
@@ -23,35 +23,41 @@
 </head>
 
 <body data-spy="scroll" data-target=".fixed-top" data-offset="100">
+  <!-- Preloader -->
+  <div id="preloader">
+    <div id="status">&nbsp;</div>
+  </div>
+
   <!-- Header -->
   <header>
 
     <nav class="navbar navbar-expand-md fixed-top " role="navigation">
-     
-       
-        <a class="navbar-brand" href="#home">Teera's</a>
-   
-        <!-- collapsible button -->
-        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-          <span class="navbar-toggler-icon"></span>
-        </button>
 
-       <!-- Navbar links -->
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+
+      <a class="navbar-brand" href="#home">Teera's</a>
+
+      <!-- collapsible button -->
+      <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse"
+        data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
 
         <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#about">ABOUT</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#portfolio">PORTFOLIO</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">CONTACT</a>
-            </li>
-          </ul>
-          
-        </div>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">PORTFOLIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">CONTACT</a>
+          </li>
+        </ul>
+
+      </div>
 
     </nav>
     <!-- End of Navbar -->
@@ -59,17 +65,17 @@
   </header>
   <!-- End of Header -->
   <section id="home">
-      <video autoplay muted loop id="hero-video">
-        <source src="src/coding.mp4" type="video/mp4" />
-      </video>
+    <video autoplay muted loop id="hero-video">
+      <source src="src/coding.mp4" type="video/mp4" />
+    </video>
 
-      <div class="hero">
-        <h1 class="main-name">Hello, I'm<span> Teera</span></h1>
-        <a href="#portfolio" class="hero-logo"><i class="far fa-folder-open"></i></a>
-        <h1 class="main-name"><span>Kositpantavong</span></h1>
-        <h2 class="sub-name">Full-stack web developer</h2>
-        <button id="hero-video-btn" onclick="videoFunction()">(pause)</button>
-      </div>
+    <div class="hero">
+      <h1 class="main-name">Hello, I'm<span> Teera</span></h1>
+      <a href="#portfolio" class="hero-logo"><i class="far fa-folder-open"></i></a>
+      <h1 class="main-name"><span>Kositpantavong</span></h1>
+      <h2 class="sub-name">Full-stack web developer</h2>
+      <button id="hero-video-btn" onclick="videoFunction()">(pause)</button>
+    </div>
   </section>
 
   <!-- About Section -->
@@ -203,10 +209,12 @@
     <!-- #1 portfolio -->
     <div class="portfolio-wrapper-center">
       <div class="portfolio-img-left">
-        <video loop muted class="img-response videoShow" onmouseover="playHover(this);" onmouseout="pauseUnhover(this);">
+        <video loop muted class="img-response videoShow" onmouseover="playHover(this);"
+          onmouseout="pauseUnhover(this);">
           <source src="src/busaba.mp4" type="video/mp4" />
         </video>
-        <a class="img-response" href="https://potaeko.github.io/SASS-Restaurant-Busaba/index.html"><img  class="img-response imageShow" src="src/busaba restaurant.jpg" alt="Busaba Restaurant"></a>
+        <a class="img-response" href="https://potaeko.github.io/SASS-Restaurant-Busaba/index.html"><img
+            class="img-response imageShow" src="src/busaba restaurant.jpg" alt="Busaba Restaurant"></a>
       </div>
       <div class="portfolio-right">
         <div class="portfolio-right-heading">
@@ -232,10 +240,12 @@
     <!-- #2 portfolio -->
     <div class="portfolio-wrapper-center">
       <div class="portfolio-img-left">
-        <video loop muted class="img-response videoShow" onmouseover="playHover(this);" onmouseout="pauseUnhover(this);">
+        <video loop muted class="img-response videoShow" onmouseover="playHover(this);"
+          onmouseout="pauseUnhover(this);">
           <source src="src/chutima.mp4" type="video/mp4" />
         </video>
-        <a class="img-response" href="https://potaeko.github.io/SASS-Chutima-Clothing-Store"><img  class="img-response imageShow" src="src/chutima.jpg" alt="Chutima Clothing Store"></a>
+        <a class="img-response" href="https://potaeko.github.io/SASS-Chutima-Clothing-Store"><img
+            class="img-response imageShow" src="src/chutima.jpg" alt="Chutima Clothing Store"></a>
       </div>
       <div class="portfolio-right">
         <div class="portfolio-right-heading">
@@ -261,10 +271,12 @@
     <!-- #3 portfolio -->
     <div class="portfolio-wrapper-center">
       <div class="portfolio-img-left">
-        <video loop muted class="img-response videoShow" onmouseover="playHover(this);" onmouseout="pauseUnhover(this);">
+        <video loop muted class="img-response videoShow" onmouseover="playHover(this);"
+          onmouseout="pauseUnhover(this);">
           <source src="src/solo.mp4" type="video/mp4" />
         </video>
-        <a class="img-response" href="https://potaeko.github.io/Solo-Project-Frontend/"><img class="img-response imageShow" src="src/solo.jpg" alt="Solo Corporate"></a>
+        <a class="img-response" href="https://potaeko.github.io/Solo-Project-Frontend/"><img
+            class="img-response imageShow" src="src/solo.jpg" alt="Solo Corporate"></a>
       </div>
       <div class="portfolio-right">
         <div class="portfolio-right-heading">
@@ -288,10 +300,12 @@
     <!-- #4 portfolio -->
     <div class="portfolio-wrapper-center">
       <div class="portfolio-img-left">
-        <video loop muted class="img-response videoShow" onmouseover="playHover(this);" onmouseout="pauseUnhover(this);">
+        <video loop muted class="img-response videoShow" onmouseover="playHover(this);"
+          onmouseout="pauseUnhover(this);">
           <source src="src/vesco.mp4" type="video/mp4" />
         </video>
-        <a class="img-response" href="https://potaeko.github.io/Vesco-Project-Frontend/"><img class="img-response imageShow" src="src/vesco.jpg" alt="Vesco Corporate"></a>
+        <a class="img-response" href="https://potaeko.github.io/Vesco-Project-Frontend/"><img
+            class="img-response imageShow" src="src/vesco.jpg" alt="Vesco Corporate"></a>
       </div>
       <div class="portfolio-right">
         <div class="portfolio-right-heading">
@@ -330,9 +344,13 @@
     </div>
   </footer>
   <!-- End of Footer -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js" ></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
   <script type="text/Javascript" src="script.js"></script>

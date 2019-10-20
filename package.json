@@ -25,6 +25,7 @@
     "jsdom": "^15.1.1",
     "npm-check-updates": "^3.1.24",
     "popper.js": "^1.15.0",
+    "smoothscroll-polyfill": "^0.4.4",
     "waypoints": "^4.0.1",
     "wowjs": "^1.1.3"
   },

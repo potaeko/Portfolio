@@ -1,7 +1,7 @@
 $color-sky: #4b89cb;
 $color-white: #fff;
 $color-black: #000;
-$color-orange: #fd7d13;
+$color-yellow: #ffda56;
 
 $font-roboto: 'Roboto', sans-serif;
 $font-dancingScript: 'Dancing Script', cursive;
@@ -47,7 +47,7 @@ $font-josefinSans: 'Josefin Sans', sans-serif;
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: yellow;
+  color: $color-yellow;
   background-color: $color-sky;
   border: 1px solid $color-sky;
   outline:none;
@@ -81,5 +81,13 @@ body {
 
 html {
   scroll-behavior: smooth;
+}
+
+#videoShow{
+  display:none;
+}
+
+#imageShow {
+  display: block;
 }
 

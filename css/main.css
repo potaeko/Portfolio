@@ -12,6 +12,38 @@ body {
 html {
   scroll-behavior: smooth; }
 
+#videoShow {
+  display: none; }
+
+#imageShow {
+  display: block; }
+
+/* =============================================
+                 Preloader
+============================================= */
+#preloader {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  /* stay in front  */ }
+
+#status {
+  background-image: url("../src/preloader.gif");
+  background-repeat: no-repeat;
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  /* ref on page */
+  left: 50%;
+  top: 50%;
+  /* Since we have 70x70px size, we need to offset to set icon in the middle  */
+  margin-top: -35px;
+  margin-left: -35px; }
+
 .hero {
   display: flex;
   justify-content: center;
@@ -74,7 +106,7 @@ html {
     border: none;
     outline: none; }
     .hero #hero-video-btn:hover {
-      color: #fd7d13; }
+      color: #ffda56; }
     @media (max-width: 520px) {
       .hero #hero-video-btn {
         visibility: hidden; } }
@@ -99,7 +131,7 @@ html {
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: yellow;
+  color: #ffda56;
   background-color: #4b89cb;
   border: 1px solid #4b89cb;
   outline: none;
@@ -122,7 +154,7 @@ html {
       font-size: 12px;
       text-transform: uppercase;
       letter-spacing: 1px;
-      color: yellow;
+      color: #ffda56;
       background-color: #4b89cb;
       border: 1px solid #4b89cb;
       outline: none;
@@ -142,7 +174,7 @@ html {
       font-size: 12px;
       text-transform: uppercase;
       letter-spacing: 1px;
-      color: yellow;
+      color: #ffda56;
       background-color: #4b89cb;
       border: 1px solid #4b89cb;
       outline: none;
@@ -162,7 +194,7 @@ html {
       font-size: 12px;
       text-transform: uppercase;
       letter-spacing: 1px;
-      color: yellow;
+      color: #ffda56;
       background-color: #4b89cb;
       border: 1px solid #4b89cb;
       outline: none;
@@ -184,7 +216,7 @@ html {
       font-size: 12px;
       text-transform: uppercase;
       letter-spacing: 1px;
-      color: yellow;
+      color: #ffda56;
       background-color: #4b89cb;
       border: 1px solid #4b89cb;
       outline: none;
@@ -197,7 +229,7 @@ html {
       width: 50%;
       height: 100%; } }
   .button:hover {
-    color: yellow;
+    color: #ffda56;
     text-decoration: none;
     letter-spacing: 2.2px; }
 
@@ -616,7 +648,7 @@ html {
   .footer-copyright-paragraph {
     color: #fff; }
   .footer span {
-    color: #fd7d13; }
+    color: #ffda56; }
 
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
