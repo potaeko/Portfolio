@@ -40,10 +40,6 @@ $font-josefinSans: 'Josefin Sans', sans-serif;
   transform: translate(-50%, -50%);
 }
 
-.noShow {
-  display:none;
-}
-
 @mixin mainBtn($width,$height:45px){
   width: $width;
   height: $height;
