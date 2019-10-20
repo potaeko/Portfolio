@@ -78,6 +78,18 @@ body {
   background-color: white;
 }
 
+// body.a {
+//   text-decoration: none;
+// }
+
+body a {
+  // color: white; /* blue colors for links too */
+  text-decoration: none; /* no underline */
+  &:hover{
+    color:$color-yellow;
+    text-decoration: none;
+  }
+}
 
 html {
   scroll-behavior: smooth;
