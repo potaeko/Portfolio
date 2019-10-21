@@ -106,6 +106,11 @@ function pauseUnhover(el){
 ================================================*/
 $(function(){
     $(window).scroll(function(){
+        showHideNav();
+        backToTop();
+    });
+
+    function showHideNav(){
         // if scroll top lower than 100px we wwant to hide Nav bar
         if($(this).scrollTop()<20){
             //hide nav, select nav element
@@ -117,7 +122,20 @@ $(function(){
             $("nav").addClass("top-nav");
             // $("#back-to-top").fadeIn();
         }
-    });
+    }
+
+    function backToTop(){
+        if($(window).scrollTop()>50 && $(window).width()>900) {
+            //Show Back To Top Button
+            $("#back-to-top").removeClass("hide");
+            $("#back-to-top").fadeIn();
+        }
+        else{
+            //Hide Back To Top Button
+            $("#back-to-top").fadeOut();
+        }
+    }
+
 });
 
 //Smooth scrolling
