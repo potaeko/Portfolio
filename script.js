@@ -1,10 +1,3 @@
-
-// import smoothscroll from 'smoothscroll-polyfill';
- 
-// // kick off the polyfill!
-// smoothscroll.polyfill();
-
-
 /* =============================================
                  Preloader
     select 'window' on load and function 
@@ -30,7 +23,6 @@ function videoFunction() {
         videoBtn.innerHTML ="(code)";
     }
 }
-
 
 /* =============================================
                 Animated CSS
@@ -70,14 +62,11 @@ $(function(){
       
       this.destroy();
   },{offset: 'bottom-in-view'});
-  
 });
-
 
 /* =============================================
                 Portfolio
 ============================================= */
-
 $('document').ready(function() {
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|UC Browser/i.test(navigator.userAgent) ) {
      $('.videoShow').hide();
