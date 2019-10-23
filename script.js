@@ -104,12 +104,10 @@ $(function(){
         if($(this).scrollTop()<20){
             //hide nav, select nav element
             $("nav").removeClass("top-nav");
-            // $("#back-to-top").fadeOut();
         }
         else{
             //show nav
             $("nav").addClass("top-nav");
-            // $("#back-to-top").fadeIn();
         }
     }
 
@@ -127,36 +125,20 @@ $(function(){
 
 });
 
-//Smooth scrolling
-// $(document).ready(function(){
-//     $('body').scrollspy({
-//         target: "#myScrollspy", 
-//         offset: 50});   
-//   });
+/*===============================================
+                   NAVIGATION
+                Smooth scrolling
+================================================*/
 
+$(function(){
+    $("a.smooth-scroll").click(function(event){
+        //prevent default event to open url
+        event.preventDefault(); 
 
-// $(function(){
-//     $("a.smooth-scrolling").click(function(event){
-//         //stop open link url
-//         event.preventDefault(); 
-//         //this = a
-//         //get/return id like #about, #work, #team and etc, if clicked 
-//         var section = $(this).attr("href");
+        var section_id = $(this).attr("href");
         
-//         //animate
-//         $('html, body').animate({
-//             scrollTop: $(section).offset().top-64
-//         }, 1250,"easeInOutExpo"); //how long animation will run 1.25sec
-
-//     });
-// });
-
-// //Close mobile menu on click : click menu == click toggle button to close
-// $(function(){
-//         //class name for a tag in li
-//     $(".navbar-collapse ul li a").on("click touch",function(){
-//         //class name of toggle button
-//         $(".navbar-toggle").click();
-//     });
-
-// });
+        $('html, body').animate({
+            scrollTop: $(section_id).offset().top-56
+        }, 1000, "easeInOutExpo");
+    });
+});
