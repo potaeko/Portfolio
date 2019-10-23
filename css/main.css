@@ -18,6 +18,9 @@ body a {
     color: #ffda56;
     text-decoration: none; }
 
+h1 {
+  margin: 0; }
+
 #videoShow {
   display: none; }
 
