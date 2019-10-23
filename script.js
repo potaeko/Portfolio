@@ -65,7 +65,7 @@ $(function(){
 });
 
 /* =============================================
-                Portfolio
+                Portfolio device detect
 ============================================= */
 $('document').ready(function() {
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|UC Browser/i.test(navigator.userAgent) ) {
@@ -90,7 +90,7 @@ function pauseUnhover(el){
 }
 
 /*===============================================
-                   NAVIGATION
+            NAVIGATION, Back To Top btn
     Show/Hide transparent black navigation
 ================================================*/
 $(function(){
